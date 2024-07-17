@@ -2,24 +2,25 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: bisque;
 }
 
 header {
-  background-color:red;
-  color:black;
+  background-color: red;
+  color: black;
   padding: 20px;
   text-align: center;
 }
 
 header a {
-  color:black;
+  color: black;
   margin: 0 15px;
   text-decoration: none;
 }
 
 header a:hover {
   text-decoration: underline;
-   background-color:beige;
+  background-color: beige;
 }
 
 #contentc {
@@ -28,42 +29,41 @@ header a:hover {
 
 .card {
   border: 1px solid red;
-  width: 500px;
+  width: 900px;
   border-radius: 6px;
 }
-
 
 .card img {
   width: 40%;
   height: auto;
+  border-radius: 100px;
 }
 
 .content {
   padding: 10px;
-  font-size: x-small;
-  
+  font-size: small;
+  color: black;
 }
-
+h5 {
+  color: black;
+}
 
 .content span {
   font-weight: bold;
-color: red;
+  color: red;
 }
 
 .purchaseBtn {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color:black;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.5s;
 }
 
 .purchaseBtn:hover {
   background-color: #0056b3;
 }
-
-

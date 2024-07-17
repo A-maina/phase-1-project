@@ -13,17 +13,16 @@ function renderOneStock(stock) {
   `;
   document.querySelector("#stockList").appendChild(card);
 
-  const btn = card.querySelector(".purchaseBtn"); 
+  const btn = card.querySelector(".purchaseBtn");
   btn.addEventListener("click", handlePurchase);
-  btn.addEventListener("dblclick",()=>{
+  btn.addEventListener("dblclick", () => {
     btn.style.textDecoration = "none";
     btn.style.color = "white";
-  })
-  
+  });
 }
 
 function handlePurchase(event) {
-  const btn = event.target; 
+  const btn = event.target;
   btn.style.textDecoration = "line-through";
   btn.style.color = "red";
 }
