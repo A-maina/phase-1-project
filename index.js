@@ -3,24 +3,22 @@ function renderOneStock(stock) {
   card.className = "card";
   card.innerHTML = `
   <h5>${stock.title}</h5>
-      <img src = "${stock.image}">
-      <div class ="content">
-      <p> <span>Description</span>: ${stock.description}</p>
-      <p><span>Price</span>:  ${stock.price}</p>
-      <p><span> category</span>:  ${stock.category}</p>
-      <button id="purchaseBtn">Purchase</button>
-      
+      <img src="${stock.image}" alt="${stock.title}">
+      <div class="content">
+      <p><span>Description</span>: ${stock.description}</p>
+      <p><span>Price</span>: ${stock.price}</p>
+      <p><span>Category</span>: ${stock.category}</p>
+      <button class="purchaseBtn">Purchase</button>
       </div>
-      `;
+  `;
   document.querySelector("#stockList").appendChild(card);
-  document
-    .getElementById("purchaseBtn")
-    .addEventListener("click", handlePurchase);
+
+  const btn = card.querySelector(".purchaseBtn"); 
+  btn.addEventListener("click", handlePurchase);
 }
+
 function handlePurchase(event) {
-  event.preventDefault()
-   document.getElementById("purchaseBtn");
-  const btn =event.target
+  const btn = event.target; 
   btn.style.textDecoration = "line-through";
   btn.style.color = "red";
 }
@@ -33,6 +31,5 @@ function getAllStock() {
 
 function initialize() {
   getAllStock();
-  // stockData.foreach((stock) => renderOneStock(stock));
 }
 initialize();
