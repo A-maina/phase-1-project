@@ -1,4 +1,4 @@
-const stockUrl = "http://localhost:3000/stock";
+
 function renderOneStock(stock) {
   const card = document.createElement("li");
   card.className = "card";
@@ -14,6 +14,7 @@ function renderOneStock(stock) {
       `;
   document.querySelector("#stockList").appendChild(card);
 }
+ 
 
 function getAllStock() {
   fetch("http://localhost:3000/stock")
