@@ -15,6 +15,11 @@ function renderOneStock(stock) {
 
   const btn = card.querySelector(".purchaseBtn"); 
   btn.addEventListener("click", handlePurchase);
+  btn.addEventListener("dblclick",()=>{
+    btn.style.textDecoration = "none";
+    btn.style.color = "white";
+  })
+  
 }
 
 function handlePurchase(event) {

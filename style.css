@@ -16,7 +16,8 @@ body {
 
 /* Header styles */
 header {
-  background-color: #333;
+  background-color: red;
+  width: 100%;
   color: #fff;
   padding: 10px 20px;
   display: flex;
@@ -41,38 +42,35 @@ header a:hover {
 }
 
 /* Main content container */
-main {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+
 
 /* Stock list styles */
-#stockList {
-  list-style-type: none;
-  padding: 0;
-}
+
 
 .card {
-  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  
+  width: 600px;
+  height: 2000px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  margin-right: 30px;
   padding: 20px;
 }
 
 .card img {
-  max-width: 100%;
-  height: auto;
+  width: auto;
+  height: 300px;
   border-radius: 8px;
   margin-bottom: 10px;
 }
 
 .card h5 {
-  font-size: 1.2rem;
+  
+  
+  font-size:10px;
   margin-bottom: 10px;
 }
 
@@ -95,5 +93,13 @@ main {
 }
 
 .card button:hover {
-  background-color: #0056b3;
+  background-color: black;
+}
+#stockList{
+  display: flex;
+flex-direction: row;
+
+list-style-type: none;
+
+
 }
