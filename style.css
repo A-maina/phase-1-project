@@ -1,105 +1,69 @@
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styles */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
 
-/* Header styles */
 header {
-  background-color: red;
-  width: 100%;
-  color: #fff;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
+  background-color:red;
+  color:black;
+  padding: 20px;
+  text-align: center;
 }
 
 header a {
-  color: #fff;
+  color:black;
+  margin: 0 15px;
   text-decoration: none;
-  margin-left: 20px;
-  font-size: 1.2rem;
 }
 
 header a:hover {
   text-decoration: underline;
+   background-color:beige;
 }
 
-/* Main content container */
-
-
-/* Stock list styles */
-
-
-.card {
-  display: flex;
-  flex-wrap: wrap;
-  
-  width: 600px;
-  height: 2000px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  margin-right: 30px;
+#contentc {
   padding: 20px;
 }
 
+.card {
+  border: 1px solid red;
+  width: 500px;
+  border-radius: 6px;
+}
+
+
 .card img {
-  width: auto;
-  height: 300px;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  width: 40%;
+  height: auto;
 }
 
-.card h5 {
+.content {
+  padding: 10px;
+  font-size: x-small;
   
-  
-  font-size:10px;
-  margin-bottom: 10px;
 }
 
-.card .content p {
-  margin-bottom: 8px;
-}
 
-.card .content p span {
+.content span {
   font-weight: bold;
+color: red;
 }
 
-.card button {
-  background-color: #007bff;
-  color: #fff;
+.purchaseBtn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color:black;
+  color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s;
 }
 
-.card button:hover {
-  background-color: black;
+.purchaseBtn:hover {
+  background-color: #0056b3;
 }
-#stockList{
-  display: flex;
-flex-direction: row;
-
-list-style-type: none;
 
 
-}
