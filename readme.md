@@ -5,15 +5,15 @@
 - This application allows users to purchase items from an e commerce page.
 
 ## Prerequisites
+
 1. A reliable laptop or computer with atleast 8GB RAM , core i5, 500GB HDD and stable internet access.
-2. A web browser capable of running JavaScript such as *Chrome*.
+2. A web browser capable of running JavaScript such as _Chrome_.
 3. An Operating System preferably Linux or Windows 10+.
 4. A text editor capable of running JavaScript such as Visual Studio Code or Sublime Text.
 
 ### Bonus Features:
 
--  when purchase button is clicked it marks purchased and on double click it un marks purchased.
-
+- when purchase button is clicked it marks purchased and on double click it un marks purchased.
 
 ## Installation
 
@@ -26,6 +26,7 @@ To use this repo, follow these steps:
 2.  Clone the repository by running the following command:
 
             git@github.com:A-maina/phase-1-project.git
+
 3.  Change directory to the repo folder:
 
         cd phase-1-project
@@ -42,8 +43,6 @@ To use this repo, follow these steps:
 
 - Follow the process described in Alternative One above.
 
-
-
 ## Running the application
 
 - Open the index.html file in any web browser of your choice.
@@ -51,8 +50,10 @@ To use this repo, follow these steps:
 - If using Visual Studio Code, you can use the Live Server extension to run the file on any web browser set as your default web browser.
 
 - Try out the features stated at the start of this file.
+
 ## Live Link
-- https://code-challenge-3-eta.vercel.app/
+
+- https://phase-1-project-ebon.vercel.app/
 
 ## Authors
 

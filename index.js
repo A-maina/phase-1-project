@@ -28,7 +28,7 @@ function handlePurchase(event) {
 }
 
 function getAllStock() {
-  fetch("http://localhost:3000/stock")
+  fetch("https://project-1-backend-sigma.vercel.app/stock")
     .then((res) => res.json())
     .then((stockData) => stockData.forEach((stock) => renderOneStock(stock)));
 }
