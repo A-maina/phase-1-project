@@ -67,14 +67,26 @@ h5 {
 .purchaseBtn:hover {
   background-color: #0056b3;
 }
-h2{
+h2 {
   text-decoration: underline;
-  color:bisque;
+  color: bisque;
   font-size: larger;
 }
 #contact {
   background-color: red;
-  color:black;
+  color: black;
   padding: 2rem;
 }
-
+.remBtn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.remBtn:hover {
+  background-color: #0056b3;
+}

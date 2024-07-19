@@ -9,9 +9,9 @@ function renderOneStock(stock) {
       <p><span>Price</span>: ${stock.price}</p>
       <p><span>Category</span>: ${stock.category}</p>
       <button class="purchaseBtn">Purchase</button>
+      <button class="remBtn">Remove</button>
       </div>
   `;
-  document.querySelector("#stockList").appendChild(card);
 
   const btn = card.querySelector(".purchaseBtn");
   btn.addEventListener("click", handlePurchase);
@@ -19,6 +19,12 @@ function renderOneStock(stock) {
     btn.style.textDecoration = "none";
     btn.style.color = "white";
   });
+  card.querySelector('.remBtn').addEventListener('click',  () => {
+    card.remove()
+    deleteStock(stock.id)
+  })
+
+  document.querySelector("#stockList").appendChild(card);
 }
 
 function handlePurchase(event) {
@@ -31,6 +37,15 @@ function getAllStock() {
   fetch("https://project-1-backend-sigma.vercel.app/stock")
     .then((res) => res.json())
     .then((stockData) => stockData.forEach((stock) => renderOneStock(stock)));
+}
+function deleteStock(id) {
+  fetch(`https://project-1-backend-sigma.vercel.app/stock${id}`,{
+    method : "DELETE",
+    headers:{
+      "Content-Type": "application/json"
+    }
+  })
+  
 }
 
 function initialize() {
