@@ -19,10 +19,10 @@ function renderOneStock(stock) {
     btn.style.textDecoration = "none";
     btn.style.color = "white";
   });
-  card.querySelector('.remBtn').addEventListener('click',  () => {
-    card.remove()
-    deleteStock(stock.id)
-  })
+  card.querySelector(".remBtn").addEventListener("click", () => {
+    card.remove();
+    deleteStock(stock.id);
+  });
 
   document.querySelector("#stockList").appendChild(card);
 }
@@ -39,13 +39,12 @@ function getAllStock() {
     .then((stockData) => stockData.forEach((stock) => renderOneStock(stock)));
 }
 function deleteStock(id) {
-  fetch(`https://project-1-backend-sigma.vercel.app/stock${id}`,{
-    method : "DELETE",
-    headers:{
-      "Content-Type": "application/json"
-    }
-  })
-  
+  fetch(`https://project-1-backend-sigma.vercel.app/stock${id}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 }
 
 function initialize() {

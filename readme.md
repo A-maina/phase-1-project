@@ -3,10 +3,14 @@
 ## Description
 
 - This application allows users to purchase items from an e commerce page.
+- This application contains two buttons : 1. *A purchase button* 2. *A remove button*
+- When purchase button is clicked it marks purchased an on double click it un marks purchased.
+- When remove button is clicked it removes a product from the website. 
+
 
 ## Prerequisites
 
-1. A reliable laptop or computer with atleast 8GB RAM , core i5, 500GB HDD and stable internet access.
+1. A reliable laptop or computer with at least 8GB RAM , core i5, 500GB HDD and stable internet access.
 2. A web browser capable of running JavaScript such as _Chrome_.
 3. An Operating System preferably Linux or Windows 10+.
 4. A text editor capable of running JavaScript such as Visual Studio Code or Sublime Text.
