@@ -16,8 +16,8 @@ function renderOneStock(stock) {
   const btn = card.querySelector(".purchaseBtn");
   btn.addEventListener("click", handlePurchase);
   btn.addEventListener("dblclick", () => {
-    btn.style.textDecoration = "none";
-    btn.style.color = "white";
+    btn.style.color= "white";
+    btn.textContent = "purchase";
   });
   card.querySelector(".remBtn").addEventListener("click", () => {
     card.remove();
@@ -29,7 +29,8 @@ function renderOneStock(stock) {
 
 function handlePurchase(event) {
   const btn = event.target;
-  btn.style.textDecoration = "line-through";
+  btn.style.color = "red";
+  btn.textContent = "purchased"
   btn.style.color = "red";
 }
 
