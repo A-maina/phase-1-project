@@ -90,3 +90,8 @@ h2 {
 .remBtn:hover {
   background-color: #0056b3;
 }
+#dark{
+  background-color: red;
+  border: none;
+  color: black;
+}

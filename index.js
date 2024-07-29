@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("dblclick", () => {
       btn.style.color = "white";
       btn.textContent = "purchase";
-    });
+    })
     card.querySelector(".remBtn").addEventListener("click", () => {
       card.remove();
       deleteStock(stock.id);
@@ -48,6 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   }
+    const darkMode = document.getElementById("dark")
+  const body = document.body
+  darkMode.addEventListener("click", () => {
+  
+    body.style.backgroundColor = "black"
+  })
+  darkMode.addEventListener("dblclick", () => {
+      body .style.backgroundColor = "bisque"
+  })
 
   function initialize() {
     getAllStock();
